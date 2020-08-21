@@ -76,6 +76,7 @@ function Person(props){
     <div style={personSyle}>
       <h1>name: {props.name}</h1>
       <h3>name</h3>
+      <h3></h3>
     </div>
   );
 }
