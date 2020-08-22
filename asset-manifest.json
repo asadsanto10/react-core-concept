@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-core-concept/static/css/main.efcaf589.chunk.css",
+    "main.js": "/react-core-concept/static/js/main.7196c675.chunk.js",
+    "main.js.map": "/react-core-concept/static/js/main.7196c675.chunk.js.map",
+    "runtime-main.js": "/react-core-concept/static/js/runtime-main.f0165c02.js",
+    "runtime-main.js.map": "/react-core-concept/static/js/runtime-main.f0165c02.js.map",
+    "static/js/2.28f0e96d.chunk.js": "/react-core-concept/static/js/2.28f0e96d.chunk.js",
+    "static/js/2.28f0e96d.chunk.js.map": "/react-core-concept/static/js/2.28f0e96d.chunk.js.map",
+    "index.html": "/react-core-concept/index.html",
+    "precache-manifest.20fc1789518495bc5e41aa65d7b41d44.js": "/react-core-concept/precache-manifest.20fc1789518495bc5e41aa65d7b41d44.js",
+    "service-worker.js": "/react-core-concept/service-worker.js",
+    "static/css/main.efcaf589.chunk.css.map": "/react-core-concept/static/css/main.efcaf589.chunk.css.map",
+    "static/js/2.28f0e96d.chunk.js.LICENSE.txt": "/react-core-concept/static/js/2.28f0e96d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/react-core-concept/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0165c02.js",
+    "static/js/2.28f0e96d.chunk.js",
+    "static/css/main.efcaf589.chunk.css",
+    "static/js/main.7196c675.chunk.js"
+  ]
+}
