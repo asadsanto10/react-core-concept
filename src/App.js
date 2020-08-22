@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './My.scss';
 
 function App() {
   const names = ['santo amr nam', 'santo', 'borsha', 'rupali', 'halim', 'hamid'];
@@ -32,6 +33,7 @@ function App() {
   return (
     <div className="App">
 			<div className="App-heade">
+      <h2 className="sasscolor">sass</h2>
 				<ul>
 					{
 						names.map(name => <li>{name}</li>)
