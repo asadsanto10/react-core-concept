@@ -90,7 +90,7 @@ function Friends (frdName){
   }
   return(
     <div style={frndStyle}>
-      <h3>Friend Name: {frdName.name}</h3>
+      <h3>Friend Name: {frdName.name}git </h3>
       <p>Friend Details: {frdName.details}</p>
     </div>
   )
@@ -112,6 +112,7 @@ function Counter() {
   const [count, setCoutn] = useState(10);
   return (
     <div>
+      <h1>count: {count}</h1>
       <h1>count: {count}</h1>
     </div>
   );
