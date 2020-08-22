@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -60,7 +60,15 @@ function App() {
 				<Product Proname = {products[2]}></Product>
 				<Product Proname = {products[3]}></Product>
 				<Product Proname = {products[4]}></Product> */}
+
+        {/* counter */}
         <Counter></Counter>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        {/* dynamic user */}
+        <Users></Users>
       </div>
     </div>
   );
@@ -107,13 +115,39 @@ function Product(props) {
   );
 }
 
-// counter
+// counte increase
 function Counter() {
   const [count, setCoutn] = useState(10);
+  const handelIncrease = () => setCoutn(count + 1);
+  const handelDecrease = () => setCoutn(count - 1);
   return (
     <div>
       <h1>count: {count}</h1>
-      <h1>count: {count}</h1>
+      <button onClick={handelIncrease}>Increase</button>
+      <button onClick={handelDecrease}>Decrease</button>
+    </div>
+  );
+}
+
+// data call and load
+function Users(userData) {
+  const [user, setusers] = useState([]);
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res => res.json())
+    .then(data => setusers(data))
+
+  },[]);
+
+  
+  return(
+    <div>
+      <h3>Dynamic User: {user.length}</h3>
+      <ul>
+        {
+          user.map(user => <li>{user.name}</li>)
+        }
+      </ul>
     </div>
   );
 }
