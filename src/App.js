@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -60,7 +60,8 @@ function App() {
 				<Product Proname = {products[2]}></Product>
 				<Product Proname = {products[3]}></Product>
 				<Product Proname = {products[4]}></Product> */}
-        </div>
+        <Counter></Counter>
+      </div>
     </div>
   );
 }
@@ -102,6 +103,16 @@ function Product(props) {
       <h2>{props.Proname.name}</h2>
       <h2>{props.Proname.price}</h2>
       <button>Buy Now</button>
+    </div>
+  );
+}
+
+// counter
+function Counter() {
+  const [count, setCoutn] = useState(10);
+  return (
+    <div>
+      <h1>count: {count}</h1>
     </div>
   );
 }
